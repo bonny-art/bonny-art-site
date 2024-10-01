@@ -14,7 +14,7 @@ const config: Config = {
       sm: '375px',
       md: '768px',
       xl: '1280px',
-      xsOnly: { max: '375px' },
+      xsOnly: { max: '374px' },
       smOnly: { max: '767px' },
       mdOnly: { min: '768px', max: '1279px' },
       notXL: { max: '1279px' },
