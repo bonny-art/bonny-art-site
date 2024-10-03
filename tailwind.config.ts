@@ -21,6 +21,7 @@ const config: Config = {
     },
     extend: {
       colors: {
+        bgMain: '#171717',
         blackPrimary: 'rgb(38, 38, 38)',
         blackPrimaryFiftyPercent: 'rgba(38, 38, 38, 0.5)',
         blackPrimarySixtyPercent: 'rgba(38, 38, 38, 0.6)',
