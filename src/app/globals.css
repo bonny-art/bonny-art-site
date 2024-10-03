@@ -25,3 +25,36 @@ body {
     text-wrap: balance;
   }
 } */
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  @apply font-manrope m-0;
+}
+
+p {
+  @apply m-0;
+}
+
+a {
+  @apply no-underline text-current;
+}
+
+ul {
+  @apply list-none p-0 m-0;
+}
+
+li {
+  @apply list-none;
+}
+
+img {
+  @apply block max-w-full h-auto;
+}
+
+.animation {
+  @apply transition-all ease-linear duration-300
+}
