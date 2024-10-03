@@ -1,1 +1,7 @@
-{ "logo": { "aria_label": "logo bonny art" } }
+{
+  "logo": { "aria_label": "логотип bonny art" },
+  "navigates": [
+    { "id": 1, "href": "/", "name": "Головна" },
+    { "id": 2, "href": "/catalog", "name": "Каталог" }
+  ]
+}

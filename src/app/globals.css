@@ -2,9 +2,9 @@
 @tailwind components;
 @tailwind utilities;
 
-:root {
+/* :root {
   --background: #ffffff;
-  --foreground: #171717;
+  --foreground: rgb(23, 23, 23);
 }
 
 @media (prefers-color-scheme: dark) {
@@ -12,19 +12,11 @@
     --background: #0a0a0a;
     --foreground: #ededed;
   }
-}
+} */
 
 body {
-  color: var(--foreground);
-  background: var(--background);
-  font-family: var(--font-manrope);
+  @apply font-manrope text-base leading-normal h-screen m-0 bg-bgMain text-white;
 }
-
-/* @layer utilities {
-  .text-balance {
-    text-wrap: balance;
-  }
-} */
 
 h1,
 h2,
