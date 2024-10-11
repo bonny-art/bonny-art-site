@@ -7,6 +7,9 @@ export default function Home() {
       <div className="container">
         <Logo className="mt-5" />
         <Navigation className="mt-5" />
+        <button type="button" className="yellow-button">
+          Переглянути каталог
+        </button>
       </div>
     </main>
   );
