@@ -15,7 +15,7 @@
 } */
 
 body {
-  @apply font-manrope text-base leading-normal h-screen m-0 bg-bgMain text-white;
+  @apply font-comfortaa text-base leading-normal h-screen m-0 bg-bgMain text-white;
 }
 
 h1,
@@ -24,7 +24,7 @@ h3,
 h4,
 h5,
 h6 {
-  @apply font-manrope m-0;
+  @apply m-0;
 }
 
 p {
@@ -48,5 +48,8 @@ img {
 }
 
 .animation {
-  @apply transition-all ease-linear duration-300
+  @apply transition-all ease-linear duration-300;
+}
+.yellow-button {
+  @apply bg-orangePrimary text-buttonTextColor font-bold text-2xl leading-[22px] h-[62px] inline-flex items-center justify-center px-12 rounded-[30px] transition-all ease-linear duration-300 hover:bg-orangeHover focus:bg-orangeHover cursor-pointer hover:text-mainBackground focus:text-mainBackground;
 }
