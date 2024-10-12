@@ -1,4 +1,5 @@
 import ThemeButton from '@/components/common/themeButton';
+import { ContactForm } from '@/components/common/contact-form/contact-form';
 import { Logo } from '@/components/ui/logo/logo';
 import { Navigation } from '@/components/ui/navigation/navigation';
 
@@ -14,6 +15,7 @@ export default function Home() {
         <button type="button" className="yellow-button ">
           Переглянути каталог
         </button>
+        <ContactForm />
       </div>
     </main>
   );

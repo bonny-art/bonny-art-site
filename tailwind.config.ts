@@ -23,6 +23,7 @@ const config: Config = {
     extend: {
       colors: {
         bgMain: '#171717',
+        bgAccent: 'rgba(62, 54, 40, 1)',
         darkAccentColor: '#3E3628',
         blackPrimary: 'rgb(38, 38, 38)',
         blackPrimaryFiftyPercent: 'rgba(38, 38, 38, 0.5)',
@@ -37,12 +38,17 @@ const config: Config = {
         orangeLight: 'rgb(255, 244, 223)',
         orangeDim: ' rgb(251, 231, 193)',
         orangeHover: 'rgb(204, 136, 0)',
+        orangeBtnHover: 'rgba(219, 149, 10, 1)',
+
         white: 'rgb(255, 255, 255)',
         whiteTransparencyZeroFour: 'rgba(255, 255, 255, 0.4)',
         mainBackground: ' rgb(249, 249, 249)',
 
         greenRight: 'rgb(8, 170, 131)',
         redWrong: 'rgb(239, 36, 71)',
+
+        placeholderText: 'rgba(150, 144, 130, 1)',
+        selectedBg: 'rgba(34, 30, 22, 1)',
       },
       fontFamily: {
         comfortaa: 'var(--font-comfortaa), sans-serif',
