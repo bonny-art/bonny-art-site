@@ -7,11 +7,9 @@ import context from '@/data/common.json';
 
 export default function ThemeButton() {
   const { isDarkTheme, toggleThemeHandler } = useContext(MyThemeContext);
- 
 
-
-  if ( isDarkTheme === null) {
-    return null; 
+  if (isDarkTheme === null) {
+    return null;
   }
 
   return (

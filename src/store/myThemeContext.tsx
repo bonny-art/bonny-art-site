@@ -6,9 +6,8 @@ interface MyThemeContextType {
   toggleThemeHandler: () => void;
 }
 
-
 const MyThemeContext = createContext<MyThemeContextType>({
-  isDarkTheme: null, 
+  isDarkTheme: null,
   toggleThemeHandler: () => {},
 });
 
@@ -26,7 +25,6 @@ export function MyThemeContextProvider({ children }: ThemeProviderProps) {
       setIsDarkTheme(isDark);
       document.body.classList.toggle('dark', isDark);
     } else {
-   
       setIsDarkTheme(true);
       localStorage.setItem('isDarkTheme', 'false');
     }
