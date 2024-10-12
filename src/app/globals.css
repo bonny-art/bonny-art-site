@@ -15,7 +15,7 @@
 } */
 
 body {
-  @apply font-comfortaa text-base leading-normal h-screen m-0 bg-mainBackground text-blackPrimary;
+  @apply font-comfortaa text-base leading-normal h-screen  m-0 bg-mainBackground text-blackPrimary;
 }
 body.dark {
   @apply bg-bgMain text-white;

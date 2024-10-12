@@ -6,31 +6,29 @@ import Moon from '@/../public/images/icons/moon.svg';
 import context from '@/data/common.json';
 
 export default function ThemeButton() {
-  const themeCtx: { isDarkTheme?: boolean; toggleThemeHandler: () => void } =
-    useContext(MyThemeContext);
+  const { isDarkTheme, toggleThemeHandler } = useContext(MyThemeContext);
+ 
 
-  function toggleThemeHandler(): void {
-    themeCtx.toggleThemeHandler();
+
+  if ( isDarkTheme === null) {
+    return null; 
   }
 
   return (
     <button
       type="button"
-      className="w-[50px] h-[50px] bg-orangeLight dark:bg-darkAccentColor rounded-full inline-flex justify-center items-center animation hover:scale-110 focus:scale-110"
+      className="w-[50px] h-[50px] bg-orangeLight dark:bg-darkAccentColor rounded-full inline-flex justify-center items-center transition-transform duration-200 hover:scale-110 focus:scale-110"
       onClick={toggleThemeHandler}
+      aria-label={
+        isDarkTheme
+          ? context.themebutton.sunAriaLabel
+          : context.themebutton.moonAriaLabel
+      }
     >
-      {themeCtx.isDarkTheme ? (
-        <Sun
-          width={44}
-          height={44}
-          aria-label={context.themebutton.sunAriaLabel}
-        />
+      {isDarkTheme ? (
+        <Sun width={44} height={44} />
       ) : (
-        <Moon
-          width={44}
-          height={44}
-          aria-label={context.themebutton.moonAriaLabel}
-        />
+        <Moon width={44} height={44} />
       )}
     </button>
   );

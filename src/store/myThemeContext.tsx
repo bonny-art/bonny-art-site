@@ -1,56 +1,49 @@
 'use client';
-import { createContext, ReactElement, useEffect, useState } from 'react';
+import { createContext, ReactNode, useEffect, useState } from 'react';
 
-const MyThemeContext = createContext({
-  isDarkTheme: true,
+interface MyThemeContextType {
+  isDarkTheme: boolean | null;
+  toggleThemeHandler: () => void;
+}
+
+
+const MyThemeContext = createContext<MyThemeContextType>({
+  isDarkTheme: null, 
   toggleThemeHandler: () => {},
 });
 
-interface ThemePropsInterface {
-  children?: JSX.Element | Array<JSX.Element>;
+interface ThemeProviderProps {
+  children: ReactNode;
 }
 
-export function MyThemeContextProvider(
-  props: ThemePropsInterface
-): ReactElement {
-  const [isDarkTheme, setIsDarkTheme] = useState(true);
+export function MyThemeContextProvider({ children }: ThemeProviderProps) {
+  const [isDarkTheme, setIsDarkTheme] = useState<boolean | null>(null);
 
   useEffect(() => {
-    initialThemeHandler();
+    const savedTheme = localStorage.getItem('isDarkTheme');
+    if (savedTheme !== null) {
+      const isDark = JSON.parse(savedTheme);
+      setIsDarkTheme(isDark);
+      document.body.classList.toggle('dark', isDark);
+    } else {
+   
+      setIsDarkTheme(true);
+      localStorage.setItem('isDarkTheme', 'false');
+    }
   }, []);
 
-  function isLocalStorageEmpty(): boolean {
-    return !localStorage.getItem('isDarkTheme');
-  }
-
-  function initialThemeHandler(): void {
-    if (isLocalStorageEmpty()) {
-      localStorage.setItem('isDarkTheme', 'true');
-      document.querySelector('body')!.classList.add('dark');
-      setIsDarkTheme(true);
-    } else {
-      const storedTheme: boolean = JSON.parse(
-        localStorage.getItem('isDarkTheme')!
-      );
-      if (storedTheme) {
-        document.querySelector('body')!.classList.add('dark');
-      } else {
-        document.querySelector('body')!.classList.remove('dark');
-      }
-      setIsDarkTheme(storedTheme);
+  const toggleThemeHandler = () => {
+    if (isDarkTheme !== null) {
+      const newTheme = !isDarkTheme;
+      setIsDarkTheme(newTheme);
+      localStorage.setItem('isDarkTheme', JSON.stringify(newTheme));
+      document.body.classList.toggle('dark', newTheme);
     }
-  }
-
-  function toggleThemeHandler(): void {
-    const newTheme = !isDarkTheme;
-    setIsDarkTheme(newTheme);
-    document.querySelector('body')!.classList.toggle('dark', newTheme);
-    localStorage.setItem('isDarkTheme', JSON.stringify(newTheme));
-  }
+  };
 
   return (
     <MyThemeContext.Provider value={{ isDarkTheme, toggleThemeHandler }}>
-      {props.children}
+      {children}
     </MyThemeContext.Provider>
   );
 }
