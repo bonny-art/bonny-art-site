@@ -22,6 +22,7 @@ const config: Config = {
     extend: {
       colors: {
         bgMain: '#171717',
+        bgAccent: 'rgba(62, 54, 40, 1)',
         blackPrimary: 'rgb(38, 38, 38)',
         blackPrimaryFiftyPercent: 'rgba(38, 38, 38, 0.5)',
         blackPrimarySixtyPercent: 'rgba(38, 38, 38, 0.6)',
@@ -29,10 +30,11 @@ const config: Config = {
         blackPrimaryLight: 'rgba(38, 38, 38, 0.15)',
         blackPrimaryCard: ' rgb(43, 43, 42)',
 
-        orangePrimary: 'rgb(246, 184, 61)',
+        orangePrimary: 'rgba(246, 182, 55, 1)',
         orangePrimaryActive: 'rgb(249, 176, 32)',
         orangeLight: 'rgb(255, 244, 223)',
         orangeDim: ' rgb(251, 231, 193)',
+        orangeBtnHover: 'rgba(219, 149, 10, 1)',
 
         white: 'rgb(255, 255, 255)',
         whiteTransparencyZeroFour: 'rgba(255, 255, 255, 0.4)',
@@ -40,6 +42,9 @@ const config: Config = {
 
         greenRight: 'rgb(8, 170, 131)',
         redWrong: 'rgb(239, 36, 71)',
+
+        placeholderText: 'rgba(150, 144, 130, 1)',
+        selectedBg: 'rgba(34, 30, 22, 1)',
       },
       fontFamily: {
         manrope: 'var(--font-manrope), sans-serif',

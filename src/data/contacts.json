@@ -1,0 +1,55 @@
+{
+  "inputs": [
+    {
+      "id": "username",
+      "type": "text",
+      "name": "username",
+      "placeholder": "Ім'я",
+      "autoComplete": "name"
+    },
+    {
+      "id": "email",
+      "type": "email",
+      "name": "email",
+      "placeholder": "Пошта",
+      "autoComplete": "email"
+    }
+  ],
+  "textarea": {
+    "id": "comment",
+    "type": "textarea",
+    "name": "comment",
+    "placeholder": "Повідомлення чи питання"
+  },
+  "validation": {
+    "username": {
+      "required": { "message": "*Введіть своє ім’я" },
+      "minLength": { "value": 2, "message": "Мінімальна довжина 2 символи" },
+      "maxLength": {
+        "value": 30,
+        "message": "Максимальна довжина 30 символів"
+      },
+      "regExp": {
+        "value": "^(?!.*(?:[ -]{2,}| -| - |^[ -]|^-))[A-Za-zА-Яа-яЁёІіЇїЄєҐґ'ʼ` -]+$",
+        "message": "*Може містити кирилицю, латиницю, дефіс, апостроф, пробіл"
+      }
+    },
+    "email": {
+      "required": { "message": "*Введіть свою електронну пошту" },
+      "regExp": {
+        "value": "^(?!-)[A-Za-z0-9._%+-]{1,63}@[a-z0-9.-]+.[a-z]{2,}$",
+        "message": "*Введіть вірний формат електронної пошти"
+      }
+    },
+    "comment": {
+      "maxLength": {
+        "value": 300,
+        "message": "*Максимальна довжина 300 символів"
+      }
+    },
+    "checked": {
+      "value": true,
+      "message": "*Підтвердіть згоду на обробку даних"
+    }
+  }
+}

@@ -50,3 +50,26 @@ img {
 .animation {
   @apply transition-all ease-linear duration-300
 }
+
+@layer components {
+  ::-webkit-scrollbar {
+    width: 12px;
+  }
+
+  ::-webkit-scrollbar-track {
+    background-color: transparent;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    border-radius: 10px;
+  }
+
+  ::-webkit-scrollbar-thumb {
+    background-color: rgba(246, 182, 55, 1);
+    border-radius: 10px;
+    border: 2px solid rgba(34, 30, 22, 1);
+  }
+
+  ::-webkit-scrollbar-thumb:hover {
+    background-color: rgba(219, 149, 10, 1);
+  }
+}

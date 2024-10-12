@@ -1,3 +1,4 @@
+import { ContactForm } from '@/components/common/contact-form/contact-form';
 import { Logo } from '@/components/ui/logo/logo';
 import { Navigation } from '@/components/ui/navigation/navigation';
 
@@ -7,6 +8,7 @@ export default function Home() {
       <div className="container">
         <Logo className="mt-5" />
         <Navigation className="mt-5" />
+        <ContactForm />
       </div>
     </main>
   );
