@@ -14,6 +14,9 @@ export const schema = yup.object().shape({
     .string()
     .required(email.required.message)
     .matches(new RegExp(email.regExp.value), email.regExp.message),
-  comment: yup.string().max(comment.maxLength.value, comment.maxLength.message),
+  comment: yup
+    .string()
+    .required(comment.required.message)
+    .max(comment.maxLength.value, comment.maxLength.message),
   checked: yup.boolean().required().oneOf([checked.value], checked.message),
 });

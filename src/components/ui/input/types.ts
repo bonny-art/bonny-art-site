@@ -16,6 +16,6 @@ export type Name = 'username' | 'email' | 'comment' | 'checked';
 export type FormData = {
   username: string;
   email: string;
-  comment?: string;
+  comment: string;
   checked: boolean;
 };
