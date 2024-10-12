@@ -15,9 +15,11 @@
 } */
 
 body {
-  @apply font-comfortaa text-base leading-normal h-screen m-0 bg-bgMain text-white;
+  @apply font-comfortaa text-base leading-normal h-screen m-0 bg-mainBackground text-blackPrimary;
 }
-
+body.dark {
+  @apply bg-bgMain text-white;
+}
 h1,
 h2,
 h3,
@@ -52,7 +54,7 @@ img {
 }
 
 .yellow-button {
-  @apply bg-orangePrimary text-buttonTextColor font-bold text-2xl leading-[22px] h-[62px] inline-flex items-center justify-center px-12 rounded-[30px] transition-all ease-linear duration-300 hover:bg-orangeHover focus:bg-orangeHover cursor-pointer hover:text-mainBackground focus:text-mainBackground;
+  @apply bg-orangePrimary text-buttonTextColor font-bold text-2xl leading-[22px] h-[62px] inline-flex items-center justify-center px-12 rounded-[30px] animation hover:bg-orangeHover focus:bg-orangeHover cursor-pointer hover:text-mainBackground focus:text-mainBackground;
 }
 
 @layer components {

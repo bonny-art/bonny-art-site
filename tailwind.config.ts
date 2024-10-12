@@ -9,6 +9,7 @@ const config: Config = {
     './src/**/*.{js,ts,jsx,tsx}',
     './src/layout/**/*.{js,ts,jsx,tsx,mdx}',
   ],
+  darkMode: 'class',
   theme: {
     screens: {
       sm: '375px',
@@ -23,6 +24,7 @@ const config: Config = {
       colors: {
         bgMain: '#171717',
         bgAccent: 'rgba(62, 54, 40, 1)',
+        darkAccentColor: '#3E3628',
         blackPrimary: 'rgb(38, 38, 38)',
         blackPrimaryFiftyPercent: 'rgba(38, 38, 38, 0.5)',
         blackPrimarySixtyPercent: 'rgba(38, 38, 38, 0.6)',
