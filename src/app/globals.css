@@ -48,7 +48,7 @@ img {
 }
 
 .animation {
-  @apply transition-all ease-linear duration-300
+  @apply transition-all ease-linear duration-300;
 }
 
 @layer components {
