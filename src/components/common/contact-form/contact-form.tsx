@@ -8,6 +8,7 @@ import { yupResolver } from '@hookform/resolvers/yup';
 import { FormData } from './types';
 import { schema } from '@/utils/validation';
 import { Textarea } from '@/components/ui/textarea/textarea';
+import { Checkbox } from '@/components/ui/checkbox/checkbox';
 
 export const ContactForm = () => {
   const {
@@ -22,7 +23,7 @@ export const ContactForm = () => {
     resolver: yupResolver(schema),
   });
 
-  const { inputs, textarea } = contacts;
+  const { inputs, textarea, checkbox } = contacts;
 
   const onSubmit = (data: FormData) => {
     console.log(data);
@@ -55,10 +56,15 @@ export const ContactForm = () => {
         register={register}
         placeholder={textarea.placeholder}
       />
-      <button
-        type="submit"
-        className="inline-flex justify-center items-center rounded-[30px] p-5 mt-[50px] bg-orangePrimary text-xl font-bold leading-none uppercase animation hover:bg-orangeBtnHover focus:bg-orangeBtnHover"
-      >
+      <Checkbox
+        label={checkbox.label}
+        type={checkbox.type}
+        id={checkbox.id}
+        name={checkbox.name as Name}
+        errors={errors}
+        register={register}
+      />
+      <button type="submit" className="yellow-button uppercase animation">
         надіслати
       </button>
     </form>

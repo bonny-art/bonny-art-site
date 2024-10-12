@@ -21,6 +21,12 @@
     "name": "comment",
     "placeholder": "Повідомлення чи питання"
   },
+  "checkbox": {
+    "id": "checked",
+    "label": "Даю згоду на обробку персональних даних",
+    "type": "checkbox",
+    "name": "checked"
+  },
   "validation": {
     "username": {
       "required": { "message": "*Введіть своє ім’я" },

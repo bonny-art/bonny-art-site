@@ -1,6 +1,8 @@
 import { FieldErrors, UseFormRegister } from 'react-hook-form';
 
 export interface IFormFieldProps {
+  id?: string;
+  label?: string;
   type: string;
   name: Name;
   register: UseFormRegister<FormData>;

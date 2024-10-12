@@ -29,11 +29,13 @@ const config: Config = {
         blackPrimaryThirtyPercent: 'rgba(38, 38, 38, 0.3)',
         blackPrimaryLight: 'rgba(38, 38, 38, 0.15)',
         blackPrimaryCard: ' rgb(43, 43, 42)',
+        buttonTextColor: '#4D4635',
+        orangePrimary: 'rgb(246, 184, 61)',
 
-        orangePrimary: 'rgba(246, 182, 55, 1)',
         orangePrimaryActive: 'rgb(249, 176, 32)',
         orangeLight: 'rgb(255, 244, 223)',
         orangeDim: ' rgb(251, 231, 193)',
+        orangeHover: 'rgb(204, 136, 0)',
         orangeBtnHover: 'rgba(219, 149, 10, 1)',
 
         white: 'rgb(255, 255, 255)',
@@ -47,7 +49,8 @@ const config: Config = {
         selectedBg: 'rgba(34, 30, 22, 1)',
       },
       fontFamily: {
-        manrope: 'var(--font-manrope), sans-serif',
+        comfortaa: 'var(--font-comfortaa), sans-serif',
+        marmelad: 'var(--font-marmelad), sans-serif',
       },
       container: {
         center: true,
