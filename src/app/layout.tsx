@@ -2,6 +2,7 @@ import type { Metadata } from 'next';
 import { Comfortaa, Marmelad } from 'next/font/google';
 import './globals.css';
 import clsx from 'clsx';
+import { MyThemeContextProvider } from '@/store/myThemeContext';
 
 export const metadata: Metadata = {
   title: 'Create Next App',
@@ -27,9 +28,11 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en">
-      <body className={clsx(comfortaa.variable, marmelad.variable)}>
-        {children}
-      </body>
+      <MyThemeContextProvider>
+        <body className={clsx(comfortaa.variable, marmelad.variable)}>
+          {children}
+        </body>
+      </MyThemeContextProvider>
     </html>
   );
 }

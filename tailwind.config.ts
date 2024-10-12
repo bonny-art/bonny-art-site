@@ -9,6 +9,7 @@ const config: Config = {
     './src/**/*.{js,ts,jsx,tsx}',
     './src/layout/**/*.{js,ts,jsx,tsx,mdx}',
   ],
+  darkMode: 'class',
   theme: {
     screens: {
       sm: '375px',
@@ -22,6 +23,7 @@ const config: Config = {
     extend: {
       colors: {
         bgMain: '#171717',
+        darkAccentColor: '#3E3628',
         blackPrimary: 'rgb(38, 38, 38)',
         blackPrimaryFiftyPercent: 'rgba(38, 38, 38, 0.5)',
         blackPrimarySixtyPercent: 'rgba(38, 38, 38, 0.6)',
@@ -30,6 +32,7 @@ const config: Config = {
         blackPrimaryCard: ' rgb(43, 43, 42)',
         buttonTextColor: '#4D4635',
         orangePrimary: 'rgb(246, 184, 61)',
+
         orangePrimaryActive: 'rgb(249, 176, 32)',
         orangeLight: 'rgb(255, 244, 223)',
         orangeDim: ' rgb(251, 231, 193)',

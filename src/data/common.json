@@ -3,5 +3,10 @@
   "navigates": [
     { "id": 1, "href": "/", "name": "Головна" },
     { "id": 2, "href": "/catalog", "name": "Каталог" }
-  ]
+  ],
+  "themebutton":
+    {"sunAriaLabel": "іконка жовтого сонечка ",
+    "moonAriaLabel": "іконка жовтого місяца з зіркою"}
+
+  
 }
