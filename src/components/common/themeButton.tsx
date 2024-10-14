@@ -1,6 +1,5 @@
 'use client';
 
-import MyThemeContext from '../../store/myThemeContext';
 import Sun from '@/../public/images/icons/sun.svg';
 import Moon from '@/../public/images/icons/moon.svg';
 import context from '@/data/common.json';

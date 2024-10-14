@@ -31,19 +31,15 @@ export default function RootLayout({
 }) {
   return (
     <html lang="en" suppressHydrationWarning>
-     
-        <body
-          className={clsx(
-            comfortaa.variable,
-            marmelad.variable,
-            'transition-colors duration-500'
-          )}
+      <body
+        className={clsx(
+          comfortaa.variable,
+          marmelad.variable,
+          'transition-colors duration-500'
+        )}
       >
-        <Providers>
-          {children}
-        </Providers>
-        </body>
-     
+        <Providers>{children}</Providers>
+      </body>
     </html>
   );
 }
