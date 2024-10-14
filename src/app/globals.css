@@ -13,11 +13,13 @@
     --foreground: #ededed;
   }
 } */
-
-body {
-  @apply font-comfortaa text-base leading-normal h-screen m-0 bg-mainBackground text-blackPrimary;
+html {
+  @apply bg-mainBackground text-blackPrimary;
 }
-body.dark {
+body {
+  @apply font-comfortaa text-base leading-normal h-screen  m-0;
+}
+html.dark {
   @apply bg-bgMain text-white;
 }
 h1,

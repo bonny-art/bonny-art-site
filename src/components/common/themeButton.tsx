@@ -1,37 +1,40 @@
 'use client';
-import { useContext } from 'react';
-import MyThemeContext from '../../store/myThemeContext';
+
 import Sun from '@/../public/images/icons/sun.svg';
 import Moon from '@/../public/images/icons/moon.svg';
 import context from '@/data/common.json';
+import { useEffect, useState } from 'react';
+import { useTheme } from 'next-themes';
 
 export default function ThemeButton() {
-  const themeCtx: { isDarkTheme?: boolean; toggleThemeHandler: () => void } =
-    useContext(MyThemeContext);
+  const [mounted, setMounted] = useState(false);
+  const { setTheme, resolvedTheme } = useTheme();
+  useEffect(() => setMounted(true), []);
 
-  function toggleThemeHandler(): void {
-    themeCtx.toggleThemeHandler();
-  }
+  const toggleTheme = () => {
+    setTheme(resolvedTheme === 'dark' ? 'light' : 'dark');
+  };
 
   return (
     <button
       type="button"
-      className="w-[50px] h-[50px] bg-orangeLight dark:bg-darkAccentColor rounded-full inline-flex justify-center items-center animation hover:scale-110 focus:scale-110"
-      onClick={toggleThemeHandler}
+      className="w-[50px] h-[50px] bg-orangeLight dark:bg-darkAccentColor rounded-full inline-flex justify-center items-center transition-transform duration-200 hover:scale-110 focus:scale-110"
+      onClick={toggleTheme}
     >
-      {themeCtx.isDarkTheme ? (
-        <Sun
-          width={44}
-          height={44}
-          aria-label={context.themebutton.sunAriaLabel}
-        />
-      ) : (
-        <Moon
-          width={44}
-          height={44}
-          aria-label={context.themebutton.moonAriaLabel}
-        />
-      )}
+      {mounted &&
+        (resolvedTheme === 'dark' ? (
+          <Sun
+            width={44}
+            height={44}
+            aria-label={context.themebutton.sunAriaLabel}
+          />
+        ) : (
+          <Moon
+            width={44}
+            height={44}
+            aria-label={context.themebutton.moonAriaLabel}
+          />
+        ))}
     </button>
   );
 }
