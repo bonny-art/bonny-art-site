@@ -14,23 +14,27 @@ export default function ThemeButton() {
   const toggleTheme = () => {
     setTheme(resolvedTheme === 'dark' ? 'light' : 'dark');
   };
-  if (!mounted) {
-    return null;
-  }
 
   return (
     <button
       type="button"
       className="w-[50px] h-[50px] bg-orangeLight dark:bg-darkAccentColor rounded-full inline-flex justify-center items-center transition-transform duration-200 hover:scale-110 focus:scale-110"
       onClick={toggleTheme}
-      aria-label={
-        resolvedTheme === 'dark'
-          ? context.themebutton.sunAriaLabel
-          : context.themebutton.moonAriaLabel
-      }
     >
-      {resolvedTheme === 'dark' && <Sun width={44} height={44} />}
-      {resolvedTheme === 'light' && <Moon width={44} height={44} />}
+      {mounted &&
+        (resolvedTheme === 'dark' ? (
+          <Sun
+            width={44}
+            height={44}
+            aria-label={context.themebutton.sunAriaLabel}
+          />
+        ) : (
+          <Moon
+            width={44}
+            height={44}
+            aria-label={context.themebutton.moonAriaLabel}
+          />
+        ))}
     </button>
   );
 }
