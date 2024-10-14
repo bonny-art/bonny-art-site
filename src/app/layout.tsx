@@ -2,7 +2,8 @@ import type { Metadata } from 'next';
 import { Comfortaa, Marmelad } from 'next/font/google';
 import './globals.css';
 import clsx from 'clsx';
-import { MyThemeContextProvider } from '@/store/myThemeContext';
+
+import { Providers } from './providers';
 
 export const metadata: Metadata = {
   title: 'Create Next App',
@@ -29,18 +30,20 @@ export default function RootLayout({
   children: React.ReactNode;
 }) {
   return (
-    <html lang="en">
-      <MyThemeContextProvider>
+    <html lang="en" suppressHydrationWarning>
+     
         <body
           className={clsx(
             comfortaa.variable,
             marmelad.variable,
             'transition-colors duration-500'
           )}
-        >
+      >
+        <Providers>
           {children}
+        </Providers>
         </body>
-      </MyThemeContextProvider>
+     
     </html>
   );
 }

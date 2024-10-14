@@ -1,14 +1,21 @@
 'use client';
-import { useContext } from 'react';
+
 import MyThemeContext from '../../store/myThemeContext';
 import Sun from '@/../public/images/icons/sun.svg';
 import Moon from '@/../public/images/icons/moon.svg';
 import context from '@/data/common.json';
+import { useEffect, useState } from 'react';
+import { useTheme } from 'next-themes';
 
 export default function ThemeButton() {
-  const { isDarkTheme, toggleThemeHandler } = useContext(MyThemeContext);
+  const [mounted, setMounted] = useState(false);
+  const { setTheme, resolvedTheme } = useTheme();
+  useEffect(() => setMounted(true), []);
 
-  if (isDarkTheme === null) {
+  const toggleTheme = () => {
+    setTheme(resolvedTheme === 'dark' ? 'light' : 'dark');
+  };
+  if (!mounted) {
     return null;
   }
 
@@ -16,18 +23,15 @@ export default function ThemeButton() {
     <button
       type="button"
       className="w-[50px] h-[50px] bg-orangeLight dark:bg-darkAccentColor rounded-full inline-flex justify-center items-center transition-transform duration-200 hover:scale-110 focus:scale-110"
-      onClick={toggleThemeHandler}
+      onClick={toggleTheme}
       aria-label={
-        isDarkTheme
+        resolvedTheme === 'dark'
           ? context.themebutton.sunAriaLabel
           : context.themebutton.moonAriaLabel
       }
     >
-      {isDarkTheme ? (
-        <Sun width={44} height={44} />
-      ) : (
-        <Moon width={44} height={44} />
-      )}
+      {resolvedTheme === 'dark' && <Sun width={44} height={44} />}
+      {resolvedTheme === 'light' && <Moon width={44} height={44} />}
     </button>
   );
 }
