@@ -21,12 +21,13 @@ export const About = () => {
                 alt={content.alt}
                 width={592}
                 height={487}
+                loading="lazy"
                 className=""
               />
             </div>
-            <div className="bg-white dark:bg-bgAccentDark rounded-br-[60px] rounded-tr-[60px] py-8">
+            <div className="bg-white  dark:bg-bgAccentDark rounded-br-[60px] rounded-tr-[60px] py-9">
               <p className="text-about">{content.text3}</p>
-              <Link href={content.href} className="yellow-button mt-[30px]">
+              <Link href={content.href} className="yellow-button mt-[21px]">
                 {content.button}
               </Link>
             </div>
