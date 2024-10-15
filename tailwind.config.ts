@@ -24,6 +24,7 @@ const config: Config = {
       colors: {
         bgMain: '#171717',
         bgAccent: 'rgba(62, 54, 40, 1)',
+        bgAccentDark: 'rgba(34, 34, 34, 1)',
         darkAccentColor: '#3E3628',
         blackPrimary: 'rgb(38, 38, 38)',
         blackPrimaryFiftyPercent: 'rgba(38, 38, 38, 0.5)',

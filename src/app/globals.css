@@ -121,3 +121,12 @@ img {
     background 0.4s,
     stroke-dashoffset 0.6s;
 }
+.text-about {
+  @apply font-medium text-xl leading-[22px] tracking-[-0.4px];
+}
+.about-gradient {
+  background: linear-gradient(to right, white, transparent);
+}
+.dark .about-gradient {
+  background: linear-gradient(to right, rgba(34, 34, 34, 1), transparent);
+}
