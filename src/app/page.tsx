@@ -19,6 +19,9 @@ export default function Home() {
           Переглянути каталог
         </button>
 
+        <br />
+        <br />
+
         <ContactForm />
       </div>
     </main>

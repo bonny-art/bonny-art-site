@@ -49,7 +49,8 @@ const config: Config = {
         redWrong: 'rgb(239, 36, 71)',
 
         placeholderText: 'rgba(150, 144, 130, 1)',
-        selectedBg: 'rgba(34, 30, 22, 1)',
+        selectedBg: 'rgba(247, 245, 243, 1)',
+        selectedBgDark: 'rgba(34, 30, 22, 1)',
       },
       fontFamily: {
         comfortaa: 'var(--font-comfortaa), sans-serif',

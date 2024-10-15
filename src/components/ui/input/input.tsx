@@ -15,7 +15,7 @@ export const Input = ({
         {...register(name)}
         placeholder={placeholder}
         autoComplete={autoComplete}
-        className="rounded-[30px] p-5 text-xl leading-none font-medium text-white placeholder:text-placeholderText placeholder:text-xl placeholder:leading-none placeholder:font-medium bg-bgAccent border border-transparent animation hover:border hover:border-orangePrimary focus:border focus:border-orangePrimary outline-orangePrimary focus:outline-none focus:bg-selectedBg"
+        className="rounded-[30px] p-5 text-xl leading-none font-medium dark:text-white text-buttonTextColor placeholder:text-placeholderText placeholder:text-xl placeholder:leading-none placeholder:font-medium bg-white dark:bg-bgAccent border border-transparent animation hover:border hover:border-orangePrimary focus:border focus:border-orangePrimary outline-orangePrimary focus:outline-none dark:focus:bg-selectedBgDark focus:bg-selectedBg"
       />
 
       {errors[name] && (

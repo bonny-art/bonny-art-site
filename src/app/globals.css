@@ -60,25 +60,28 @@ img {
 }
 
 @layer components {
-  ::-webkit-scrollbar {
+  .scroll-container::-webkit-scrollbar {
     width: 12px;
   }
 
-  ::-webkit-scrollbar-track {
+    .scroll-container::-webkit-scrollbar-track {
     background-color: transparent;
-    margin-top: 20px;
-    margin-bottom: 20px;
+    margin: 20px 0;
     border-radius: 10px;
   }
 
-  ::-webkit-scrollbar-thumb {
-    background-color: rgba(246, 182, 55, 1);
+    .scroll-container::-webkit-scrollbar-thumb {
+    background-color: theme('colors.orangePrimary');
     border-radius: 10px;
-    border: 2px solid rgba(34, 30, 22, 1);
+    border: 2px solid theme('colors.white');
   }
 
-  ::-webkit-scrollbar-thumb:hover {
-    background-color: rgba(219, 149, 10, 1);
+    .dark .scroll-container::-webkit-scrollbar-thumb {
+      border: 2px solid theme('colors.buttonTextColor');
+    }
+
+    .scroll-container::-webkit-scrollbar-thumb:hover {
+    background-color: theme('colors.orangeHover');
   }
 }
 
@@ -90,7 +93,7 @@ img {
 
 .checkbox:hover .checkbox__check {
   background: transparent;
-  border: 1px solid #f6b637;
+  border: 1px solid theme('colors.orangePrimary');
 }
 
 .checkbox__input {
@@ -100,20 +103,19 @@ img {
 }
 
 .checkbox__input:checked + .checkbox__check {
-  background: #f6b637;
-  border: 1px solid #f6b637;
+  background: theme('colors.orangePrimary');
+  border: 1px solid theme('colors.orangePrimary');
   stroke-dashoffset: 0;
 }
 
 .checkbox__check {
-  border: 1px solid #fff;
-  stroke: #4d4635;
+  border: 1px solid theme('colors.buttonTextColor');
+  stroke: theme('colors.buttonTextColor');
   stroke-dasharray: 25;
   stroke-dashoffset: 25;
   stroke-linecap: round;
   stroke-width: 1px;
   border-radius: 50%;
-
   fill: none;
   transition:
     background 0.4s,
