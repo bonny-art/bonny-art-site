@@ -15,6 +15,8 @@ export default function Home() {
         <button type="button" className="yellow-button ">
           Переглянути каталог
         </button>
+        <br />
+        <br />
         <ContactForm />
       </div>
     </main>
