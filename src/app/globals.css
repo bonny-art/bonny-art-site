@@ -64,23 +64,23 @@ img {
     width: 12px;
   }
 
-    .scroll-container::-webkit-scrollbar-track {
+  .scroll-container::-webkit-scrollbar-track {
     background-color: transparent;
     margin: 20px 0;
     border-radius: 10px;
   }
 
-    .scroll-container::-webkit-scrollbar-thumb {
+  .scroll-container::-webkit-scrollbar-thumb {
     background-color: theme('colors.orangePrimary');
     border-radius: 10px;
     border: 2px solid theme('colors.white');
   }
 
-    .dark .scroll-container::-webkit-scrollbar-thumb {
-      border: 2px solid theme('colors.buttonTextColor');
-    }
+  .dark .scroll-container::-webkit-scrollbar-thumb {
+    border: 2px solid theme('colors.buttonTextColor');
+  }
 
-    .scroll-container::-webkit-scrollbar-thumb:hover {
+  .scroll-container::-webkit-scrollbar-thumb:hover {
     background-color: theme('colors.orangeHover');
   }
 }
