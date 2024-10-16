@@ -4,6 +4,7 @@ import './globals.css';
 import clsx from 'clsx';
 
 import { Providers } from './providers';
+import { Header } from '@/layout/header/header';
 
 export const metadata: Metadata = {
   title: 'Create Next App',
@@ -38,7 +39,9 @@ export default function RootLayout({
           'transition-colors duration-500'
         )}
       >
-        <Providers>{children}</Providers>
+        <Providers>
+          <Header /> {children}
+        </Providers>
       </body>
     </html>
   );
