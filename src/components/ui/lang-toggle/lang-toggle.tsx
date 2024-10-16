@@ -8,27 +8,34 @@ export const LangToggle = () => {
   const [language, setLanguage] = useState('uk');
   const { languages } = common;
 
-  const toggleLanguage = (lang: string) => {
-    setLanguage(lang);
+  const toggleLanguage = () => {
+    setLanguage(language === 'uk' ? 'en' : 'uk');
   };
 
   return (
-    <div className="flex bg-white dark:bg-bgAccentDark rounded-full overflow-hidden w-[100px] h-[50px]">
+    <button
+      type="button"
+      className="relative flex items-center justify-between w-[100px] h-[50px] bg-white dark:bg-bgAccentDark rounded-full"
+      onClick={toggleLanguage}
+    >
+      <span
+        className={clsx(
+          'absolute top-0 w-[50px] h-[50px] bg-orangeLight dark:bg-bgAccent rounded-full transition-transform duration-300',
+          language === 'uk' ? 'translate-x-0' : 'translate-x-full'
+        )}
+      />
+
       {languages.map(({ lang, label }) => (
-        <button
+        <span
           key={lang}
-          type="button"
           className={clsx(
-            'flex-1 text-base font-medium leading-5 animation',
-            lang === language
-              ? 'bg-orangeLight dark:bg-bgAccent rounded-full dark:text-white'
-              : 'text-orangePrimary'
+            'z-10 w-1/2 text-center text-base font-medium leading-5',
+            language === lang ? 'dark:text-white' : 'text-orangePrimary'
           )}
-          onClick={() => toggleLanguage(lang)}
         >
           {label}
-        </button>
+        </span>
       ))}
-    </div>
+    </button>
   );
 };
