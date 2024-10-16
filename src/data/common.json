@@ -7,5 +7,9 @@
   "themebutton": {
     "sunAriaLabel": "іконка жовтого сонечка ",
     "moonAriaLabel": "іконка жовтого місяца з зіркою"
-  }
+  },
+  "languages": [
+    { "lang": "uk", "label": "Укр" },
+    { "lang": "en", "label": "En" }
+  ]
 }
