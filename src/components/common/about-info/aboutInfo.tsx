@@ -4,7 +4,7 @@ import Arrow from '@/../public/images/icons/arrow.svg';
 
 export const AboutInfo = () => {
   return (
-    <div className="py-14 px-11 bg-white dark:bg-bgAccentDark rounded-tl-[60px] rounded-tr-[60px] rounded-bl-[60px] w-[592px]">
+    <div className="py-14 px-11 bg-accentBgColorLt dark:bg-accentBgColorDt rounded-tl-[60px] rounded-tr-[60px] rounded-bl-[60px] w-[592px]">
       <h3 className="text-2xl font-medium leading-[22px] tracking-[-0.48px] mb-6 w-[400px]">
         {content.subtitle}
       </h3>
