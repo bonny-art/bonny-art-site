@@ -22,36 +22,24 @@ const config: Config = {
     },
     extend: {
       colors: {
-        bgMain: '#171717',
-        bgAccent: 'rgba(62, 54, 40, 1)',
-        bgAccentDark: 'rgba(34, 34, 34, 1)',
-        darkAccentColor: '#3E3628',
-        accentBg: 'rgba(34, 34, 34, 1)',
-        blackPrimary: 'rgb(38, 38, 38)',
-        blackPrimaryFiftyPercent: 'rgba(38, 38, 38, 0.5)',
-        blackPrimarySixtyPercent: 'rgba(38, 38, 38, 0.6)',
-        blackPrimaryThirtyPercent: 'rgba(38, 38, 38, 0.3)',
-        blackPrimaryLight: 'rgba(38, 38, 38, 0.15)',
-        blackPrimaryCard: ' rgb(43, 43, 42)',
-        buttonTextColor: '#4D4635',
-        orangePrimary: 'rgb(246, 184, 61)',
-
-        orangePrimaryActive: 'rgb(249, 176, 32)',
-        orangeLight: 'rgb(255, 244, 223)',
-        orangeDim: ' rgb(251, 231, 193)',
-        orangeHover: 'rgb(204, 136, 0)',
-        orangeBtnHover: 'rgba(219, 149, 10, 1)',
-
-        white: 'rgb(255, 255, 255)',
-        whiteTransparencyZeroFour: 'rgba(255, 255, 255, 0.4)',
-        mainBackground: ' rgb(249, 249, 249)',
-
-        greenRight: 'rgb(8, 170, 131)',
-        redWrong: 'rgb(239, 36, 71)',
-
-        placeholderText: 'rgba(150, 144, 130, 1)',
-        selectedBg: 'rgba(247, 245, 243, 1)',
-        selectedBgDark: 'rgba(34, 30, 22, 1)',
+        bgColorDt: '#171717', // rgba(23, 23, 23, 1)
+        bgColorLt: '#F0F0F0', // rgba(240, 240, 240, 1)
+        accentBgColorDt: '#222222', // rgba(34, 34, 34, 1)
+        accentBgColorLt: '#FFFFFF', // rgba(255, 255, 255, 1)
+        additionalColorDt: '#3E3628', // rgba(62, 54, 40, 1)
+        additionalColorLt: '#FFEECC', // rgba(255, 238, 204, 1)
+        accentColorDt: '#F6B637', // rgba(246, 182, 55, 1)
+        accentColorLt: '#F1951E', // rgba(241, 149, 30, 1)
+        accentHoverColorDt: '#F8C45E', // rgba(248, 196, 94, 1)
+        accentHoverColorLt: '#F08800', // rgba(240, 136, 0, 1)
+        accentColor40Dt: '#F6B63766', // rgba(246, 182, 55, 0.4)
+        accentColor40Ll: '#F1951E66', // rgba(241, 149, 30, 0.4)
+        textColorDt: '#FFFCF5', // rgba(255, 252, 245, 1)
+        textColorLt: '#332F23', // rgba(51, 47, 35, 1)
+        textColor60Dt: '#FFF8EB99', // rgba(255, 248, 235, 0.6)
+        textColor60Lt: '#332F2399', // rgba(51, 47, 35, 0.6)
+        backdropDk: '#222222B3', // rgba(34, 34, 34, 0.7)
+        errorColor: '#FF3030', // rgba(255, 48, 48, 1)
       },
       fontFamily: {
         comfortaa: 'var(--font-comfortaa), sans-serif',
