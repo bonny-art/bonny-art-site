@@ -11,5 +11,28 @@
   "languages": [
     { "lang": "uk", "label": "Укр" },
     { "lang": "en", "label": "En" }
+  ],
+  "social": [
+    {
+      "id": 1,
+      "name": "instagram",
+      "link": "https://www.instagram.com/bonny.art",
+      "text": "@bonny.art",
+      "ariaLabel": "посилання на сторінку instagram bonny art"
+    },
+    {
+      "id": 2,
+      "name": "facebook",
+      "link": "https://www.facebook.com/BonnyArtStitch",
+      "text": "fb.com/BonnyArtStitch",
+      "ariaLabel": "посилання на сторінку facebook bonny art"
+    },
+    {
+      "id": 3,
+      "name": "mail",
+      "link": "mailto:bonnyart.com.ua@gmail.com",
+      "text": "bonnyart.com.ua@gmail.com",
+      "ariaLabel": "посилання на відправлення листа bonny art"
+    }
   ]
 }
