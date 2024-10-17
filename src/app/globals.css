@@ -102,12 +102,33 @@ img {
 }
 
 .checkbox:hover .checkbox__check {
-  background: transparent;
+  background: theme('colors.accentBgColorLt');
   border: 1px solid theme('colors.accentColorLt');
 }
 
 .dark .checkbox:hover .checkbox__check {
+  background: theme('colors.bgColorDt');
   border: 1px solid theme('colors.accentColorDt');
+}
+
+.checkbox__input:focus-visible+.checkbox__check {
+  outline: 2px solid theme('colors.accentColorLt');
+  outline-offset: 4px;
+}
+
+.dark .checkbox__input:focus-visible+.checkbox__check {
+  outline: 2px solid theme('colors.accentColorDt');
+  outline-offset: 4px;
+}
+
+.checkbox:focus-within:focus-visible {
+  outline: 2px solid theme('colors.accentColorLt');
+  outline-offset: 4px;
+}
+
+.dark .checkbox:focus-within:focus-visible {
+  outline: 2px solid theme('colors.accentColorDt');
+  outline-offset: 4px;
 }
 
 .checkbox__input {
@@ -127,7 +148,7 @@ img {
 }
 
 .checkbox__check {
-  border: 1px solid theme('colors.textColorDt');
+  border: 1px solid theme('colors.textColorLt');
   stroke: theme('colors.textColorDt');
   stroke-dasharray: 25;
   stroke-dashoffset: 25;
@@ -139,6 +160,13 @@ img {
     background 0.4s,
     stroke-dashoffset 0.6s;
 }
+
+.dark .checkbox__check {
+  border: 1px solid theme('colors.textColorDt');
+  stroke: theme('colors.textColorLt');
+
+}
+
 .text-about {
   @apply font-medium text-xl leading-[22px] tracking-[-0.4px];
 }
