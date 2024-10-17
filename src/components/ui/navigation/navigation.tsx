@@ -12,7 +12,7 @@ export const Navigation = ({ className }: NavProps) => {
           <li key={i.id}>
             <Link
               href={i.href}
-              className="min-w-[150px] inline-flex items-center justify-center py-4 px-10 rounded-[30px] border border-buttonTextColor border-opacity-40 dark:border-whiteTransparencyZeroFour animation text-sm leading-[1.28] font-medium -tracking-[0.42px] hover:border-orangePrimary hover:text-orangePrimary dark:hover:border-orangePrimary dark:hover:text-orangePrimary md:text-base md:leading-5 md:-tracking-[0.48px]"
+              className="min-w-[150px] inline-flex items-center justify-center py-4 px-10 rounded-[30px] border border-textColor60Lt border-opacity-40 dark:border-textColor60Dt animation text-sm leading-[1.28] font-medium -tracking-[0.42px] hover:border-accentColorLt hover:text-accentColorLt hover:dark:border-accentColorDt hover:dark:text-accentColorDt dark:hover:border-accentColorDt dark:hover:text-accentColorDt md:text-base md:leading-5 md:-tracking-[0.48px]"
             >
               {i.name}
             </Link>

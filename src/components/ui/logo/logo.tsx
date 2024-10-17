@@ -10,11 +10,11 @@ export const Logo = ({ className }: LogoProps) => {
     <Link
       href="/"
       aria-label={logo.aria_label}
-      className={clsx('inline-flex', className)}
+      className={clsx('inline-flex items-center', className)}
     >
       <LogoIcon
-        width={178}
-        height={40}
+        width={208}
+        height={44}
         className="animation hover:scale-105 focus:scale-105"
       />
     </Link>

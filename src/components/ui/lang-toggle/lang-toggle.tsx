@@ -15,12 +15,12 @@ export const LangToggle = () => {
   return (
     <button
       type="button"
-      className="relative flex items-center justify-between w-[100px] h-[50px] bg-white dark:bg-bgAccentDark rounded-full"
+      className="relative flex items-center justify-between w-[100px] h-[50px] bg-accentBgColorLt dark:bg-accentBgColorDt rounded-full"
       onClick={toggleLanguage}
     >
       <span
         className={clsx(
-          'absolute top-0 w-[50px] h-[50px] bg-orangeLight dark:bg-bgAccent rounded-full transition-transform duration-300',
+          'absolute top-0 w-[50px] h-[50px] bg-additionalColorLt dark:bg-additionalColorDt rounded-full transition-transform duration-300',
           language === 'uk' ? 'translate-x-0' : 'translate-x-full'
         )}
       />
@@ -30,7 +30,9 @@ export const LangToggle = () => {
           key={lang}
           className={clsx(
             'z-10 w-1/2 text-center text-base font-medium leading-5',
-            language === lang ? 'dark:text-white' : 'text-orangePrimary'
+            language === lang
+              ? 'dark:text-accentBgColorLt'
+              : 'text-accentColorDt'
           )}
         >
           {label}

@@ -11,11 +11,11 @@ export const Textarea = ({
       <textarea
         {...register(name)}
         placeholder={placeholder}
-        className="scroll-container resize-none h-32 rounded-[30px] p-5 text-xl leading-none font-medium dark:text-white text-buttonTextColor placeholder:text-placeholderText placeholder:text-xl placeholder:leading-none placeholder:font-medium bg-white dark:bg-bgAccent border border-transparent animation hover:border hover:border-orangePrimary focus:border focus:border-orangePrimary outline-orangePrimary focus:outline-none dark:focus:bg-selectedBgDark focus:bg-selectedBg"
+        className="scroll-container resize-none h-32 rounded-[30px] p-5 text-xl leading-none font-medium dark:text-textColorDt text-textColorLt placeholder:text-textColor60Lt placeholder:dark:text-textColor60Dt placeholder:text-xl placeholder:leading-none placeholder:font-medium bg-textColorDt dark:bg-additionalColorDt border border-transparent animation hover:border hover:border-accentColorLt focus:border focus:border-accentColorLt outline-none hover:dark:border-accentColorDt focus:dark:border focus:dark:border-accentColorDt dark:outline-none focus:outline-none dark:focus:bg-accentBgColorDt focus:bg-accentBgColorLt"
       />
 
       {errors[name] && (
-        <p className="absolute -bottom-6 right-8 text-sm font-medium text-redWrong">
+        <p className="absolute -bottom-6 right-8 text-sm font-medium text-errorColor">
           {errors[name]?.message}
         </p>
       )}
