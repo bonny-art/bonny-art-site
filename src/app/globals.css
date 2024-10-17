@@ -111,12 +111,12 @@ img {
   border: 1px solid theme('colors.accentColorDt');
 }
 
-.checkbox__input:focus-visible+.checkbox__check {
+.checkbox__input:focus-visible + .checkbox__check {
   outline: 2px solid theme('colors.accentColorLt');
   outline-offset: 4px;
 }
 
-.dark .checkbox__input:focus-visible+.checkbox__check {
+.dark .checkbox__input:focus-visible + .checkbox__check {
   outline: 2px solid theme('colors.accentColorDt');
   outline-offset: 4px;
 }
@@ -164,7 +164,6 @@ img {
 .dark .checkbox__check {
   border: 1px solid theme('colors.textColorDt');
   stroke: theme('colors.textColorLt');
-
 }
 
 .text-about {
