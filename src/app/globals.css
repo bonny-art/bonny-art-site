@@ -76,11 +76,11 @@ img {
     border: 2px solid theme('colors.accentBgColorLt');
   }
 
-    .scroll-container::-webkit-scrollbar-thumb {
-      background-color: theme('colors.accentColorLt');
-      border-radius: 10px;
-      border: 2px solid theme('colors.accentColorLt');
-    }
+  .scroll-container::-webkit-scrollbar-thumb {
+    background-color: theme('colors.accentColorLt');
+    border-radius: 10px;
+    border: 2px solid theme('colors.accentColorLt');
+  }
 
   .dark .scroll-container::-webkit-scrollbar-thumb {
     border: 2px solid theme('colors.textColorDt');
@@ -90,9 +90,9 @@ img {
     background-color: theme('colors.accentHoverColorLt');
   }
 
-   .dark .scroll-container::-webkit-scrollbar-thumb:hover {
-      background-color: theme('colors.accentHoverColorDt');
-    }
+  .dark .scroll-container::-webkit-scrollbar-thumb:hover {
+    background-color: theme('colors.accentHoverColorDt');
+  }
 }
 
 .checkbox {
@@ -115,7 +115,7 @@ img {
   height: 0;
   opacity: 0;
 }
-.checkbox__input:checked+.checkbox__check {
+.checkbox__input:checked + .checkbox__check {
   background: theme('colors.accentColorLt');
   border: 1px solid theme('colors.accentColorLt');
   stroke-dashoffset: 0;
@@ -124,7 +124,6 @@ img {
 .dark .checkbox__input:checked + .checkbox__check {
   background: theme('colors.accentColorDt');
   border: 1px solid theme('colors.accentColorDt');
-
 }
 
 .checkbox__check {
@@ -144,8 +143,16 @@ img {
   @apply font-medium text-xl leading-[22px] tracking-[-0.4px];
 }
 .about-gradient {
-  background: linear-gradient(to right, theme('colors.accentBgColorLt'), transparent);
+  background: linear-gradient(
+    to right,
+    theme('colors.accentBgColorLt'),
+    transparent
+  );
 }
 .dark .about-gradient {
-  background: linear-gradient(to right, theme('colors.accentBgColorDt'), transparent);
+  background: linear-gradient(
+    to right,
+    theme('colors.accentBgColorDt'),
+    transparent
+  );
 }
