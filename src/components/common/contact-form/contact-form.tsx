@@ -41,7 +41,7 @@ export const ContactForm = () => {
     <form
       onSubmit={handleSubmit(onSubmit)}
       autoComplete="on"
-      className="flex flex-col max-w-[696px] p-12 bg-additionalColorLt dark:bg-accentBgColorDt rounded-[60px]"
+      className="flex flex-col min-w-[696px] p-[46px] bg-additionalColorLt dark:bg-accentBgColorDt rounded-[60px]"
     >
       <div className="flex flex-col gap-9">
         {inputs.map((input) => (

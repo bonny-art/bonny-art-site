@@ -1,5 +1,5 @@
-import { ContactForm } from '@/components/common/contact-form/contact-form';
 import { About } from '@/sections/About/About';
+import { Contacts } from '@/sections/contacts/contacts';
 import { Hero } from '@/sections/hero/hero';
 
 export default function Home() {
@@ -7,9 +7,7 @@ export default function Home() {
     <main>
       <Hero />
       <About />
-      <div className="container">
-        <ContactForm />
-      </div>
+      <Contacts />
     </main>
   );
 }
