@@ -5,6 +5,7 @@ import clsx from 'clsx';
 
 import { Providers } from './providers';
 import { Header } from '@/layout/header/header';
+import { Footer } from '@/layout/footer/footer';
 
 export const metadata: Metadata = {
   title: 'Create Next App',
@@ -40,7 +41,9 @@ export default function RootLayout({
         )}
       >
         <Providers>
-          <Header /> {children}
+          <Header />
+          {children}
+          <Footer />
         </Providers>
       </body>
     </html>

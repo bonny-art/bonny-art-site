@@ -1,0 +1,13 @@
+{
+  "policyPage": {
+    "home": {
+      "name": "Головна",
+      "href": "/"
+    },
+    "policy": {
+      "name": "Політика конфіденційності",
+      "href": "/policy"
+    }
+  },
+  "copyright": "Copyright"
+}
