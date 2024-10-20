@@ -18,7 +18,7 @@ export default function ThemeButton() {
   return (
     <button
       type="button"
-      className="w-[50px] h-[50px] bg-additionalColorLt dark:bg-additionalColorDt rounded-full inline-flex justify-center items-center transition-transform duration-200 hover:scale-110 focus:scale-110"
+      className="w-[50px] h-[50px] bg-additionalLt dark:bg-additionalDt rounded-full inline-flex justify-center items-center transition-transform duration-200 hover:scale-110 focus:scale-110"
       onClick={toggleTheme}
     >
       {mounted &&
