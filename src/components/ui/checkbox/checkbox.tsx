@@ -20,11 +20,7 @@ export const Checkbox = ({
           {...register(name)}
           className="checkbox__input"
         />
-        <svg
-          className="checkbox__check"
-          width="28"
-          height="28"
-        >
+        <svg className="checkbox__check" width="28" height="28">
           <polyline points="6 14 12 20 20 6"></polyline>
         </svg>
       </div>
