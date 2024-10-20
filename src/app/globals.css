@@ -14,14 +14,17 @@
   }
 } */
 html {
-  @apply bg-bgColorLt text-textColorLt dark:text-textColorDt;
+  @apply bg-bgLt text-textLt dark:text-textDt;
 }
+
+html.dark {
+  @apply bg-bgDt text-accentBgLt;
+}
+
 body {
   @apply font-comfortaa text-base leading-normal h-screen  m-0;
 }
-html.dark {
-  @apply bg-bgColorDt text-accentBgColorLt;
-}
+
 h1,
 h2,
 h3,
@@ -56,7 +59,7 @@ img {
 }
 
 .yellow-button {
-  @apply bg-accentColorLt dark:bg-accentColorDt text-textColorDt dark:text-textColorLt font-bold text-2xl leading-[22px] h-[62px] inline-flex items-center justify-center px-12 rounded-[30px] animation hover:bg-accentHoverColorLt focus:bg-accentHoverColorLt hover:dark:bg-accentHoverColorDt focus:dark:bg-accentHoverColorDt  cursor-pointer;
+  @apply bg-accentLt dark:bg-accentDt text-textDt dark:text-textLt font-bold text-2xl leading-[22px] h-[62px] inline-flex items-center justify-center px-12 rounded-[30px] animation hover:bg-hoverLt focus:bg-hoverLt hover:dark:bg-hoverDt focus:dark:bg-hoverDt cursor-pointer;
 }
 
 @layer components {
@@ -71,27 +74,27 @@ img {
   }
 
   .dark .scroll-container::-webkit-scrollbar-thumb {
-    background-color: theme('colors.accentColorDt');
+    background-color: theme('colors.accentDt');
     border-radius: 10px;
-    border: 2px solid theme('colors.accentBgColorLt');
+    border: 2px solid theme('colors.accentBgLt');
   }
 
   .scroll-container::-webkit-scrollbar-thumb {
-    background-color: theme('colors.accentColorLt');
+    background-color: theme('colors.accentLt');
     border-radius: 10px;
-    border: 2px solid theme('colors.accentColorLt');
+    border: 2px solid theme('colors.accentLt');
   }
 
   .dark .scroll-container::-webkit-scrollbar-thumb {
-    border: 2px solid theme('colors.textColorDt');
+    border: 2px solid theme('colors.textDt');
   }
 
   .scroll-container::-webkit-scrollbar-thumb:hover {
-    background-color: theme('colors.accentHoverColorLt');
+    background-color: theme('colors.hoverLt');
   }
 
   .dark .scroll-container::-webkit-scrollbar-thumb:hover {
-    background-color: theme('colors.accentHoverColorDt');
+    background-color: theme('colors.hoverDt');
   }
 }
 
@@ -102,32 +105,31 @@ img {
 }
 
 .checkbox:hover .checkbox__check {
-  background: theme('colors.accentBgColorLt');
-  border: 1px solid theme('colors.accentColorLt');
+  background: transparent;
+  border: 1px solid theme('colors.accentLt');
 }
 
 .dark .checkbox:hover .checkbox__check {
-  background: theme('colors.bgColorDt');
-  border: 1px solid theme('colors.accentColorDt');
+  border: 1px solid theme('colors.accentDt');
 }
 
 .checkbox__input:focus-visible + .checkbox__check {
-  outline: 2px solid theme('colors.accentColorLt');
+  outline: 2px solid theme('colors.accentLt');
   outline-offset: 4px;
 }
 
 .dark .checkbox__input:focus-visible + .checkbox__check {
-  outline: 2px solid theme('colors.accentColorDt');
+  outline: 2px solid theme('colors.accentDt');
   outline-offset: 4px;
 }
 
 .checkbox:focus-within:focus-visible {
-  outline: 2px solid theme('colors.accentColorLt');
+  outline: 2px solid theme('colors.accentLt');
   outline-offset: 4px;
 }
 
 .dark .checkbox:focus-within:focus-visible {
-  outline: 2px solid theme('colors.accentColorDt');
+  outline: 2px solid theme('colors.accentDt');
   outline-offset: 4px;
 }
 
@@ -137,19 +139,19 @@ img {
   opacity: 0;
 }
 .checkbox__input:checked + .checkbox__check {
-  background: theme('colors.accentColorLt');
-  border: 1px solid theme('colors.accentColorLt');
+  background: theme('colors.accentLt');
+  border: 1px solid theme('colors.accentLt');
   stroke-dashoffset: 0;
 }
 
 .dark .checkbox__input:checked + .checkbox__check {
-  background: theme('colors.accentColorDt');
-  border: 1px solid theme('colors.accentColorDt');
+  background: theme('colors.accentDt');
+  border: 1px solid theme('colors.accentDt');
 }
 
 .checkbox__check {
-  border: 1px solid theme('colors.textColorLt');
-  stroke: theme('colors.textColorDt');
+  border: 1px solid theme('colors.textDt');
+  stroke: theme('colors.textDt');
   stroke-dasharray: 25;
   stroke-dashoffset: 25;
   stroke-linecap: round;
@@ -162,8 +164,8 @@ img {
 }
 
 .dark .checkbox__check {
-  border: 1px solid theme('colors.textColorDt');
-  stroke: theme('colors.textColorLt');
+  border: 1px solid theme('colors.textDt');
+  stroke: theme('colors.textLt');
 }
 
 .text-about {
@@ -172,14 +174,14 @@ img {
 .about-gradient {
   background: linear-gradient(
     to right,
-    theme('colors.accentBgColorLt'),
+    theme('colors.accentBgLt'),
     transparent
   );
 }
 .dark .about-gradient {
   background: linear-gradient(
     to right,
-    theme('colors.accentBgColorDt'),
+    theme('colors.accentBgDt'),
     transparent
   );
 }

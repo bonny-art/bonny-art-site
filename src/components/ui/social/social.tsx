@@ -22,26 +22,26 @@ export const Social = ({ section }: SocialProps) => {
               target="_blank"
               rel="noopener noreferrer"
               aria-label={i.ariaLabel}
-              className="inline-flex items-center text-accentColorLt dark:text-accentColorDt animation group"
+              className="inline-flex items-center text-textLt dark:text-textDt animation group"
             >
               <div
                 className={clsx(
-                  'w-11 h-11 dark:bg-additionalColorDt rounded-full flex justify-center items-center animation group-hover:bg-accentColorLt group-hover:dark:bg-accentColorDt',
+                  'w-11 h-11  rounded-full flex justify-center items-center animation group-hover:bg-accentLt group-hover:dark:bg-accentDt',
                   section === 'header'
-                    ? 'bg-textColorDt'
-                    : 'bg-additionalColorLt'
+                    ? 'bg-bgFormLt dark:bg-bgFormDt'
+                    : 'bg-additionalLt dark:bg-additionalDt'
                 )}
               >
                 {Icon && (
                   <Icon
                     width={20}
                     height={20}
-                    className="group-hover:text-textColorDt animation"
+                    className="text-accentLt dark:text-accentDt group-hover:text-textInvertLt group-hover:dark:text-textInvertDt animation"
                   />
                 )}
               </div>
               {section === 'contact' && (
-                <span className="text-textColorLt dark:text-textColorDt ml-4 text-xl font-medium leading-normal group-hover:text-accentColorLt group-hover:dark:text-accentColorDt">
+                <span className="text-textLt dark:text-textDt ml-4 text-xl font-medium leading-normal group-hover:text-accentLt group-hover:dark:text-accentDt">
                   {i.text}
                 </span>
               )}

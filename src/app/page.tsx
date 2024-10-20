@@ -9,7 +9,9 @@ export default function Home() {
       <Hero />
       <About />
       <div className="container">
-        <Social section="header" />
+        <div className="bg-additionalVarDt">
+          <Social section="header" />
+        </div>
         <Social section="contact" />
         <ContactForm />
       </div>
