@@ -18,11 +18,11 @@ html {
 }
 
 html.dark {
-  @apply bg-bgDt text-accentBgLt;
+  @apply bg-bgDt text-textDt;
 }
 
 body {
-  @apply font-comfortaa text-base leading-normal h-screen  m-0;
+  @apply font-comfortaa text-base leading-normal h-screen m-0;
 }
 
 h1,
@@ -58,7 +58,7 @@ img {
   @apply transition-all ease-linear duration-300;
 }
 
-.yellow-button {
+.primary-button {
   @apply bg-accentLt dark:bg-accentDt text-textDt dark:text-textLt font-bold text-2xl leading-[22px] h-[62px] inline-flex items-center justify-center px-12 rounded-[30px] animation hover:bg-hoverLt focus:bg-hoverLt hover:dark:bg-hoverDt focus:dark:bg-hoverDt cursor-pointer;
 }
 
@@ -76,7 +76,7 @@ img {
   .dark .scroll-container::-webkit-scrollbar-thumb {
     background-color: theme('colors.accentDt');
     border-radius: 10px;
-    border: 2px solid theme('colors.accentBgLt');
+    border: 2px solid theme('colors.accentDt');
   }
 
   .scroll-container::-webkit-scrollbar-thumb {
@@ -105,7 +105,6 @@ img {
 }
 
 .checkbox:hover .checkbox__check {
-  background: transparent;
   border: 1px solid theme('colors.accentLt');
 }
 
@@ -150,8 +149,9 @@ img {
 }
 
 .checkbox__check {
-  border: 1px solid theme('colors.textDt');
-  stroke: theme('colors.textDt');
+  background: theme('colors.bgFormLt');
+  border: 1px solid theme('colors.textLt');
+  stroke: theme('colors.textInvertLt');
   stroke-dasharray: 25;
   stroke-dashoffset: 25;
   stroke-linecap: round;
@@ -164,8 +164,9 @@ img {
 }
 
 .dark .checkbox__check {
+  background: theme('colors.bgFormDt');
   border: 1px solid theme('colors.textDt');
-  stroke: theme('colors.textLt');
+  stroke: theme('colors.textInvertDt');
 }
 
 .text-about {

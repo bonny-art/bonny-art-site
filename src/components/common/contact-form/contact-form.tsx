@@ -41,7 +41,7 @@ export const ContactForm = () => {
     <form
       onSubmit={handleSubmit(onSubmit)}
       autoComplete="on"
-      className="flex flex-col max-w-[696px] p-12 bg-additionalLt dark:bg-accentBgDt rounded-[60px]"
+      className="flex flex-col max-w-[696px] p-12 bg-additionalVarLt dark:bg-additionalVarDt rounded-[60px]"
     >
       <div className="flex flex-col gap-9">
         {inputs.map((input) => (
@@ -71,7 +71,7 @@ export const ContactForm = () => {
         errors={errors}
         register={register}
       />
-      <button type="submit" className="yellow-button uppercase animation">
+      <button type="submit" className="primary-button uppercase animation">
         надіслати
       </button>
     </form>
