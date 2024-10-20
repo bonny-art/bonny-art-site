@@ -11,7 +11,39 @@ export const Textarea = ({
       <textarea
         {...register(name)}
         placeholder={placeholder}
-        className="scroll-container resize-none h-32 rounded-[30px] p-5 text-xl leading-none font-medium dark:text-textDt text-textLt placeholder:text-text60Lt placeholder:dark:text-text60Dt placeholder:text-xl placeholder:leading-none placeholder:font-medium bg-textDt dark:bg-additionalDt border border-transparent animation hover:border hover:border-accentLt focus:border focus:border-accentLt outline-none hover:dark:border-accentDt focus:dark:border focus:dark:border-accentDt dark:outline-none focus:outline-none dark:focus:bg-accentBgDt focus:bg-accentBgLt"
+        className="
+          rounded-[30px] 
+          scroll-container
+          resize-none 
+          h-32 
+          p-5 
+          text-xl 
+          leading-none 
+          font-medium
+          
+          outline-none
+          dark:outline-none 
+          focus:outline-none 
+          focus:dark:outline-none
+
+          border 
+          border-transparent 
+          hover:border 
+          focus:border 
+          hover:border-accentLt 
+          dark:hover:border-accentDt
+          focus:border-accentLt 
+          dark:focus:border-accentDt
+                    
+          placeholder:text-xl 
+          placeholder:leading-none 
+          placeholder:font-medium 
+          placeholder:text-text60Lt 
+          dark:placeholder:text-text60Dt 
+
+          bg-bgFormLt 
+          dark:bg-bgFormDt 
+        "
       />
 
       {errors[name] && (

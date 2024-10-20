@@ -11,7 +11,7 @@ export const Checkbox = ({
   return (
     <label
       htmlFor={id}
-      className="checkbox gap-3 text-xl text-textDt dark:text-accentBgLt leading-6 font-normal my-[50px] relative"
+      className="checkbox gap-3 text-xl text-textLt dark:text-textDt leading-6 font-normal my-[50px] relative"
     >
       <div className="inline-flex">
         <input
@@ -21,7 +21,7 @@ export const Checkbox = ({
           className="checkbox__input"
         />
         <svg
-          className="checkbox__check dark:stroke-accentBgLt dark:border-accentBgLt"
+          className="checkbox__check"
           width="28"
           height="28"
         >

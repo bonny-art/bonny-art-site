@@ -27,7 +27,7 @@ export const About = () => {
             </div>
             <div className="bg-accentBgLt  dark:bg-accentBgDt rounded-br-[60px] rounded-tr-[60px] py-9">
               <p className="text-about">{content.text3}</p>
-              <Link href={content.href} className="yellow-button mt-[21px]">
+              <Link href={content.href} className="primary-button mt-[21px]">
                 {content.button}
               </Link>
             </div>
