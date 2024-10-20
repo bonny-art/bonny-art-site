@@ -30,7 +30,9 @@ export const LangToggle = () => {
           key={lang}
           className={clsx(
             'z-10 w-1/2 text-center text-base font-medium leading-5',
-            language === lang ? 'dark:text-accentBgLt' : 'text-accentDt'
+            language === lang
+              ? 'text-textLt dark:text-textDt'
+              : 'text-accentLt dark:text-accentDt'
           )}
         >
           {label}
