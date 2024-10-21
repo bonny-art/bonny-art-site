@@ -9,8 +9,9 @@ export default function Home() {
       <Hero />
       <About />
       <div className="container">
+        <Social section="mobile" />
         <div className="bg-additionalVarDt">
-          <Social section="header" />
+          <Social section="footer" />
         </div>
         <Social section="contact" />
         <ContactForm />

@@ -9,7 +9,11 @@ export const Social = ({ section }: SocialProps) => {
     <ul
       className={clsx(
         'flex',
-        section === 'contact' ? 'flex-col gap-3' : 'gap-2'
+        section === 'contact'
+          ? 'flex-col gap-3'
+          : section === 'mobile'
+            ? 'gap-5'
+            : 'gap-2'
       )}
     >
       {social.map((i) => {
@@ -27,7 +31,7 @@ export const Social = ({ section }: SocialProps) => {
               <div
                 className={clsx(
                   'w-11 h-11  rounded-full flex justify-center items-center animation group-hover:bg-accentLt group-hover:dark:bg-accentDt',
-                  section === 'header'
+                  section === 'footer'
                     ? 'bg-bgFormLt dark:bg-bgFormDt'
                     : 'bg-additionalLt dark:bg-additionalDt'
                 )}

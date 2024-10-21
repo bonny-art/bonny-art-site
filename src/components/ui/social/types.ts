@@ -3,7 +3,7 @@ import Facebook from '@/../public/images/icons/facebook.svg';
 import Mail from '@/../public/images/icons/mail.svg';
 
 export interface SocialProps {
-  section: 'contact' | 'header';
+  section: 'contact' | 'footer' | 'mobile';
 }
 
 export const iconMap = {
