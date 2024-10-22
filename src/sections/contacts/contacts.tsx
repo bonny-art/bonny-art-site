@@ -6,7 +6,7 @@ import contacts from '@/data/contacts.json';
 export const Contacts = () => {
   return (
     <section>
-      <div className="container">
+      <div className="container pt-5 pb-10">
         <TitleSection text={contacts.title} />
         <div className="flex justify-between flex-col gap-5">
           <ContactBlock />
