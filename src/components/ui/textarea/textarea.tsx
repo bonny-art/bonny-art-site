@@ -7,15 +7,65 @@ export const Textarea = ({
   errors,
 }: IFormFieldProps) => {
   return (
-    <div className="flex flex-col relative mt-9">
+    <div className="flex flex-col relative mt-6 xl:mt-9">
       <textarea
         {...register(name)}
         placeholder={placeholder}
-        className="scroll-container resize-none h-[124px] rounded-[30px] p-5 text-xl leading-none font-medium dark:text-textColorDt text-textColorLt placeholder:text-textColor60Lt placeholder:dark:text-textColor60Dt placeholder:text-xl placeholder:leading-none placeholder:font-medium bg-textColorDt dark:bg-additionalColorDt border border-transparent animation hover:border hover:border-accentColorLt focus:border focus:border-accentColorLt outline-none hover:dark:border-accentColorDt focus:dark:border focus:dark:border-accentColorDt dark:outline-none focus:outline-none dark:focus:bg-accentBgColorDt focus:bg-accentBgColorLt"
+        className="
+          rounded-[30px] 
+          scroll-container
+          resize-none 
+          py-3
+          px-4
+          text-sm
+          h-[124px] 
+          leading-none 
+          font-medium
+          placeholder:text-sm 
+          placeholder:leading-none 
+          placeholder:font-medium
+          
+          outline-none
+          dark:outline-none 
+          focus:outline-none 
+          focus:dark:outline-none
+
+          border 
+          border-transparent 
+          hover:border 
+          focus:border 
+          hover:border-accentLt 
+          dark:hover:border-accentDt
+          focus:border-accentLt 
+          dark:focus:border-accentDt
+                    
+          xl:placeholder:text-xl 
+          placeholder:text-text60Lt 
+          dark:placeholder:text-text60Dt 
+
+          bg-bgFormLt 
+          dark:bg-bgFormDt 
+
+          xl:h-32 
+          xl:p-5 
+          xl:text-xl
+        "
       />
 
       {errors[name] && (
-        <p className="absolute -bottom-6 right-8 text-sm font-medium text-errorColor">
+        <p
+          className="absolute 
+        text-[10px]
+        font-medium
+        text-error
+        leading-none
+        tracking-[-0.3px]
+        right-5
+        -bottom-4
+        xl:-bottom-6
+        xl:right-8
+        xl:text-sm"
+        >
           {errors[name]?.message}
         </p>
       )}

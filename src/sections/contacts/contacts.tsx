@@ -8,7 +8,7 @@ export const Contacts = () => {
     <section>
       <div className="container">
         <TitleSection text={contacts.title} />
-        <div className="flex justify-between">
+        <div className="flex justify-between flex-col gap-5">
           <ContactBlock />
           <ContactForm />
         </div>

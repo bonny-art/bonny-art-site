@@ -11,7 +11,7 @@ export const Checkbox = ({
   return (
     <label
       htmlFor={id}
-      className="checkbox gap-3 text-xl text-textColorDt dark:text-accentBgColorLt leading-6 font-normal my-[50px] relative"
+      className="checkbox gap-3 text-textLt font-comfortaa text-sm leading-none tracking-[0.42px] font-normal dark:text-textDt my-[30px] xl:leading-6 xl:text-xl xl:my-[50px] relative"
     >
       <div className="inline-flex">
         <input
@@ -20,17 +20,25 @@ export const Checkbox = ({
           {...register(name)}
           className="checkbox__input"
         />
-        <svg
-          className="checkbox__check dark:stroke-accentBgColorLt dark:border-accentBgColorLt"
-          width="28"
-          height="28"
-        >
+        <svg className="checkbox__check" width="28" height="28">
           <polyline points="6 14 12 20 20 6"></polyline>
         </svg>
       </div>
       {label}
       {errors[name] && (
-        <p className="absolute -bottom-6 right-8 text-sm font-medium text-errorColor">
+        <p
+          className="absolute 
+        text-[10px]
+        font-medium
+        text-error
+        leading-none
+        tracking-[-0.3px]
+        right-5
+        -bottom-4
+        xl:-bottom-6
+        xl:right-8
+        xl:text-sm"
+        >
           {errors[name]?.message}
         </p>
       )}
