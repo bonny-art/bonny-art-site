@@ -53,7 +53,7 @@ export const Social = ({ section }: SocialProps) => {
                 font-medium
                 leading-normal
                 tracking-[-0.3px]
-                xl:ml-4 xl:text-xl
+                md:ml-4 md:text-xl
                 group-hover:text-accentLt
                 group-hover:dark:text-accentDt"
                 >

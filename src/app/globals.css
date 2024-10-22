@@ -59,7 +59,7 @@ img {
 }
 
 .primary-button {
-  @apply bg-accentLt dark:bg-accentDt text-textDt dark:text-textLt font-medium text-base leading-none tracking-[-0.48px] h-[34px] inline-flex items-center justify-center rounded-[30px] py-2 px-[18px] xl:font-bold xl:px-12 xl:h-[62px] xl:text-2xl xl:leading-[22px] animation hover:bg-hoverLt focus:bg-hoverLt hover:dark:bg-hoverDt focus:dark:bg-hoverDt cursor-pointer;
+  @apply bg-accentLt dark:bg-accentDt text-textDt dark:text-textLt font-medium text-base leading-none tracking-[-0.48px] h-[34px] inline-flex items-center justify-center rounded-[30px] py-2 px-[18px] md:font-bold md:px-12 md:h-[62px] md:text-2xl md:leading-[22px] animation hover:bg-hoverLt focus:bg-hoverLt hover:dark:bg-hoverDt focus:dark:bg-hoverDt cursor-pointer;
 }
 
 @layer components {

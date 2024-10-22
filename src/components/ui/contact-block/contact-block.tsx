@@ -14,12 +14,13 @@ export const ContactBlock = () => {
     rounded-[30px]
     py-5
     px-4
-    xl:max-w-[520px]
-    xl:py-[82px]
-    xl:px-[46px]
-    xl:rounded-[60px]"
+    md:gap-[66px]
+    md:py-[82px]
+    md:px-[46px]
+    md:rounded-[60px]
+    xl:max-w-[520px]"
     >
-      <div className="flex flex-col gap-3 xl:gap-5">
+      <div className="flex flex-col gap-3 md:gap-7">
         <h3
           className="text-accentLt 
         dark:text-accentDt
@@ -28,9 +29,9 @@ export const ContactBlock = () => {
         font-bold
         leading-normal
         -tracking-[0.48px]
-        xl:text-3xl
-        xl:leading-[1.4]
-        xl:-tracking-[0.6px]"
+        md:text-3xl
+        md:leading-[1.1]
+        md:-tracking-[0.6px]"
         >
           {contactBlock.title}
         </h3>
@@ -42,8 +43,9 @@ export const ContactBlock = () => {
         font-medium
         leading-normal
         -tracking-[0.32px]
-        xl:text-2xl
-        xl:-tracking-[0.48px]"
+        md:text-2xl
+        md:-tracking-[0.48px]
+        xl:leading-none"
         >
           {contactBlock.subtitle}
         </p>

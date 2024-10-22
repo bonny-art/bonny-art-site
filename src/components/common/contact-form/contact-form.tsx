@@ -48,11 +48,11 @@ export const ContactForm = () => {
       py-5 
       px-4 
       rounded-[30px] 
-      xl:min-w-[808px] 
-      xl:p-12 
-      xl:rounded-[60px]"
+      md:p-[46px] 
+      md:rounded-[60px]
+      xl:min-w-[808px]"
     >
-      <div className="flex flex-col gap-6 xl:gap-9">
+      <div className="flex flex-col gap-6 md:gap-9">
         {inputs.map((input) => (
           <Input
             key={input.id}

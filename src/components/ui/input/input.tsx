@@ -51,9 +51,10 @@ export const Input = ({
           bg-bgFormLt 
           dark:bg-bgFormDt 
           
-          xl:text-xl 
-          xl:p-5 
-          xl:placeholder:text-xl 
+          md:h-[62px]
+          md:text-xl 
+          md:p-5 
+          md:placeholder:text-xl 
         "
       />
 
@@ -67,9 +68,9 @@ export const Input = ({
         tracking-[-0.3px]
         right-5
         -bottom-4
-        xl:-bottom-6
-        xl:right-8
-        xl:text-sm"
+        md:-bottom-6
+        md:right-8
+        md:text-sm"
         >
           {errors[name]?.message}
         </p>

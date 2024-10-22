@@ -11,7 +11,7 @@ export const Checkbox = ({
   return (
     <label
       htmlFor={id}
-      className="checkbox gap-3 text-textLt font-comfortaa text-sm leading-none tracking-[0.42px] font-normal dark:text-textDt my-[30px] xl:leading-6 xl:text-xl xl:my-[50px] relative"
+      className="checkbox gap-3 text-textLt font-comfortaa text-sm leading-none tracking-[0.42px] font-normal dark:text-textDt my-[30px] md:leading-6 md:text-xl md:my-[50px] relative"
     >
       <div className="inline-flex">
         <input
@@ -35,9 +35,9 @@ export const Checkbox = ({
         tracking-[-0.3px]
         right-5
         -bottom-4
-        xl:-bottom-6
-        xl:right-8
-        xl:text-sm"
+        md:-bottom-6
+        md:right-8
+        md:text-sm"
         >
           {errors[name]?.message}
         </p>

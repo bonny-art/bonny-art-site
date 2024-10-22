@@ -7,7 +7,7 @@ export const Textarea = ({
   errors,
 }: IFormFieldProps) => {
   return (
-    <div className="flex flex-col relative mt-6 xl:mt-9">
+    <div className="flex flex-col relative mt-6 md:mt-9">
       <textarea
         {...register(name)}
         placeholder={placeholder}
@@ -39,16 +39,16 @@ export const Textarea = ({
           focus:border-accentLt 
           dark:focus:border-accentDt
                     
-          xl:placeholder:text-xl 
+          md:placeholder:text-xl 
           placeholder:text-text60Lt 
           dark:placeholder:text-text60Dt 
 
           bg-bgFormLt 
           dark:bg-bgFormDt 
 
-          xl:h-32 
-          xl:p-5 
-          xl:text-xl
+          md:h-[124px] 
+          md:p-5 
+          md:text-xl
         "
       />
 
@@ -62,9 +62,9 @@ export const Textarea = ({
         tracking-[-0.3px]
         right-5
         -bottom-4
-        xl:-bottom-6
-        xl:right-8
-        xl:text-sm"
+        md:-bottom-6
+        md:right-8
+        md:text-sm"
         >
           {errors[name]?.message}
         </p>
