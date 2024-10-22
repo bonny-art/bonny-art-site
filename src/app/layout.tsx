@@ -40,7 +40,7 @@ export default function RootLayout({
         )}
       >
         <Providers>
-          {/* <Header /> */}
+          <Header />
           {children}
         </Providers>
       </body>
