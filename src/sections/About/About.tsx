@@ -15,7 +15,7 @@ export const About = () => {
           <AboutInfo />
 
           <div className="text-center  about-gradient w-[624px]">
-            <div className="pl-8 pb-8 bg-bgColorLt dark:bg-bgColorDt rounded-bl-[60px]">
+            <div className="pl-8 pb-8 bg-bgLt dark:bg-bgDt rounded-bl-[60px]">
               <Image
                 src={content.src}
                 alt={content.alt}
@@ -25,9 +25,9 @@ export const About = () => {
                 className=""
               />
             </div>
-            <div className="bg-accentBgColorLt  dark:bg-accentBgColorDt rounded-br-[60px] rounded-tr-[60px] py-9">
+            <div className="bg-accentBgLt  dark:bg-accentBgDt rounded-br-[60px] rounded-tr-[60px] py-9">
               <p className="text-about">{content.text3}</p>
-              <Link href={content.href} className="yellow-button mt-[21px]">
+              <Link href={content.href} className="primary-button mt-[21px]">
                 {content.button}
               </Link>
             </div>

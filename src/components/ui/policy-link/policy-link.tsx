@@ -13,7 +13,7 @@ export const PolicyLink = () => {
   return (
     <Link
       href={href}
-      className="text-accentColorLt dark:text-accentColorDt font-comfortaa text-sm font-bold -tracking-[0.42px] underline animation hover:text-accentHoverColorLt hover:dark:text-accentHoverColorDt"
+      className="text-accentLt dark:text-accentDt font-comfortaa text-sm font-bold -tracking-[0.42px] underline animation hover:text-hoverLt hover:dark:text-hoverDt"
     >
       {name}
     </Link>
