@@ -20,7 +20,7 @@ export const ContactBlock = () => {
     md:rounded-[60px]
     xl:py-[82px]
     xl:gap-[66px]
-    xl:max-w-[520px]"
+    xl:min-w-[520px]"
     >
       <div className="flex flex-col gap-3 xsOnly:pr-[5px] md:gap-7">
         <h3
