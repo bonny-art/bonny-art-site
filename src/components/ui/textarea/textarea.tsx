@@ -19,7 +19,7 @@ export const Textarea = ({
           px-4
           text-sm
           h-[124px] 
-          leading-none 
+          leading-normal
           font-medium
           placeholder:text-sm 
           placeholder:leading-none 
@@ -49,6 +49,7 @@ export const Textarea = ({
           md:h-[124px] 
           md:p-5 
           md:text-xl
+          md:leading-none 
         "
       />
 
