@@ -49,7 +49,7 @@ export const Textarea = ({
           md:h-[124px] 
           md:p-5 
           md:text-xl
-          md:leading-none 
+          md:leading-normal
         "
       />
 
