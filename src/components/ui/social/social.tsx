@@ -30,7 +30,7 @@ export const Social = ({ section }: SocialProps) => {
             >
               <div
                 className={clsx(
-                  'w-11 h-11  rounded-full flex justify-center items-center animation group-hover:bg-accentLt group-hover:dark:bg-accentDt',
+                  'w-11 h-11 rounded-full flex justify-center items-center animation group-hover:bg-accentLt group-hover:dark:bg-accentDt',
                   section === 'footer'
                     ? 'bg-bgFormLt dark:bg-bgFormDt'
                     : 'bg-additionalLt dark:bg-additionalDt'
@@ -45,7 +45,18 @@ export const Social = ({ section }: SocialProps) => {
                 )}
               </div>
               {section === 'contact' && (
-                <span className="text-textLt dark:text-textDt ml-4 text-xl font-medium leading-normal group-hover:text-accentLt group-hover:dark:text-accentDt">
+                <span
+                  className="text-textLt 
+                dark:text-textDt
+                ml-2
+                text-[15px]
+                font-medium
+                leading-normal
+                tracking-[-0.3px]
+                md:ml-4 md:text-xl
+                group-hover:text-accentLt
+                group-hover:dark:text-accentDt"
+                >
                   {i.text}
                 </span>
               )}

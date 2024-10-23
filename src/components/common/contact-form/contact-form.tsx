@@ -24,7 +24,7 @@ export const ContactForm = () => {
     resolver: yupResolver(schema),
   });
 
-  const { inputs, textarea, checkbox } = contacts;
+  const { inputs, textarea, checkbox, button } = contacts;
 
   useFormPersist('contactForm', {
     watch,
@@ -41,9 +41,18 @@ export const ContactForm = () => {
     <form
       onSubmit={handleSubmit(onSubmit)}
       autoComplete="on"
-      className="flex flex-col max-w-[696px] p-12 bg-additionalVarLt dark:bg-additionalVarDt rounded-[60px]"
+      className="bg-additionalVarLt 
+      dark:bg-additionalVarDt 
+      flex 
+      flex-col 
+      py-5 
+      px-4 
+      rounded-[30px] 
+      md:p-[46px] 
+      md:rounded-[60px]
+      xl:min-w-[808px]"
     >
-      <div className="flex flex-col gap-9">
+      <div className="flex flex-col gap-6 md:gap-9">
         {inputs.map((input) => (
           <Input
             key={input.id}
@@ -71,8 +80,8 @@ export const ContactForm = () => {
         errors={errors}
         register={register}
       />
-      <button type="submit" className="primary-button uppercase animation">
-        надіслати
+      <button type="submit" className="primary-button animation">
+        {button}
       </button>
     </form>
   );

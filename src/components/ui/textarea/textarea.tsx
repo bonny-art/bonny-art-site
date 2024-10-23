@@ -7,7 +7,7 @@ export const Textarea = ({
   errors,
 }: IFormFieldProps) => {
   return (
-    <div className="flex flex-col relative mt-9">
+    <div className="flex flex-col relative mt-6 md:mt-9">
       <textarea
         {...register(name)}
         placeholder={placeholder}
@@ -15,11 +15,15 @@ export const Textarea = ({
           rounded-[30px] 
           scroll-container
           resize-none 
-          h-32 
-          p-5 
-          text-xl 
-          leading-none 
+          py-3
+          px-4
+          text-sm
+          h-[124px] 
+          leading-normal
           font-medium
+          placeholder:text-sm 
+          placeholder:leading-none 
+          placeholder:font-medium
           
           outline-none
           dark:outline-none 
@@ -35,19 +39,34 @@ export const Textarea = ({
           focus:border-accentLt 
           dark:focus:border-accentDt
                     
-          placeholder:text-xl 
-          placeholder:leading-none 
-          placeholder:font-medium 
+          md:placeholder:text-xl 
           placeholder:text-text60Lt 
           dark:placeholder:text-text60Dt 
 
           bg-bgFormLt 
           dark:bg-bgFormDt 
+
+          md:h-[124px] 
+          md:p-5 
+          md:text-xl
+          md:leading-normal
         "
       />
 
       {errors[name] && (
-        <p className="absolute -bottom-6 right-8 text-sm font-medium text-error">
+        <p
+          className="absolute 
+        text-[10px]
+        font-medium
+        text-error
+        leading-none
+        tracking-[-0.3px]
+        right-5
+        -bottom-4
+        md:-bottom-6
+        md:right-8
+        md:text-sm"
+        >
           {errors[name]?.message}
         </p>
       )}
