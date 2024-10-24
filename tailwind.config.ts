@@ -12,13 +12,13 @@ const config: Config = {
   darkMode: 'class',
   theme: {
     screens: {
-      sm: '375px',
+      sm: '480px',
       md: '768px',
-      xl: '1280px',
-      xsOnly: { max: '374px' },
+      xl: '1440px',
+      xsOnly: { max: '479px' },
       smOnly: { max: '767px' },
-      mdOnly: { min: '768px', max: '1279px' },
-      notXL: { max: '1279px' },
+      mdOnly: { min: '768px', max: '1439px' },
+      notXL: { max: '1439px' },
     },
     extend: {
       colors: {
