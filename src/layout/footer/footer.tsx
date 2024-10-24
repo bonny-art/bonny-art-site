@@ -8,7 +8,7 @@ export const Footer = () => {
   const { copyright } = footer;
 
   return (
-    <footer className="bg-additionalVarLt dark:bg-additionalVarDt rounded-t-[30px] md:rounded-t-[60px]">
+    <footer className="bg-additionalVarLt dark:bg-additionalVarDt rounded-t-[30px] md:rounded-t-[60px] flex mt-auto">
       <div className="container py-5 md:py-8">
         <div className="flex items-center justify-between flex-col gap-6 md:flex-row md:h-[84px]">
           <Logo className="mt-[14px]" />

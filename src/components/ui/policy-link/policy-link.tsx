@@ -1,14 +1,14 @@
 'use client';
 
 import Link from 'next/link';
-import { useIsHomePage } from '@/hooks/use-is-home-page';
+import { useIsPolicyPage } from '@/hooks/use-is-policy-page';
 import footer from '@/data/footer.json';
 
 export const PolicyLink = () => {
-  const isHomePage = useIsHomePage();
+  const isPolicyPage = useIsPolicyPage();
 
   const { home, policy } = footer.policyPage;
-  const { href, name } = isHomePage ? policy : home;
+  const { href, name } = isPolicyPage ? policy : home;
 
   return (
     <Link
