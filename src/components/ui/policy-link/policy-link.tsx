@@ -8,7 +8,7 @@ export const PolicyLink = () => {
   const isPolicyPage = useIsPolicyPage();
 
   const { home, policy } = footer.policyPage;
-  const { href, name } = isPolicyPage ? policy : home;
+  const { href, name } = !isPolicyPage ? policy : home;
 
   return (
     <Link
