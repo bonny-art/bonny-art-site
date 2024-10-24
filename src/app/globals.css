@@ -22,7 +22,7 @@ html.dark {
 }
 
 body {
-  @apply font-comfortaa text-base leading-normal h-screen m-0;
+  @apply font-comfortaa text-base leading-normal min-h-screen flex flex-col m-0;
 }
 
 h1,
